@@ -1,0 +1,199 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2012 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[11pt,a4paper,sans]{moderncv}   % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% moderncv themes
+\moderncvstyle{banking}                        % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue}                          % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+%\renewcommand{\familydefault}{\sfdefault}    % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+%\nopagenumbers{}                             % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+\usepackage[utf8]{inputenc}                  % if you are not using xelatex ou lualatex, replace by the encoding you are using
+%\usepackage{CJKutf8}                         % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+
+% adjust the page margins
+\usepackage[scale=0.80]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}           % if you want to change the width of the column with the dates
+\usepackage{tikz}
+
+%%%%%%%%%%%%% Defining Skype's logo
+\newcommand*{\skypesocialsymbol} {%
+  \protect\raisebox{-0.085em}{%
+\protect\begin{tikzpicture}[y=0.08em,x=0.08em,xscale=0.022,yscale=-0.022, inner sep=0pt, outer sep=0pt]
+\protect\path[fill=color2,even odd rule] (487.6550,288.9690) .. controls (489.0610,278.5690) and
+  (489.8700,267.9960) .. (489.8700,257.2330) .. controls (489.8700,128.0770) and
+  (384.5990,23.3610) .. (254.7670,23.3610) .. controls (241.8630,23.3610) and
+  (229.2120,24.4210) .. (216.9010,26.4410) .. controls (194.8280,12.0570) and
+  (168.5590,3.6740) .. (140.2880,3.6740) .. controls (62.7660,3.6740) and
+  (0.0000,66.4820) .. (0.0000,143.9800) .. controls (0.0000,172.1780) and
+  (8.2990,198.3740) .. (22.5900,220.3690) .. controls (20.6650,232.3860) and
+  (19.6810,244.6920) .. (19.6810,257.2290) .. controls (19.6810,386.4050) and
+  (124.8980,491.1100) .. (254.7660,491.1100) .. controls (269.4230,491.1100) and
+  (283.6930,489.6840) .. (297.5620,487.1780) .. controls (319.1120,500.5470) and
+  (344.4960,508.3260) .. (371.7080,508.3260) .. controls (449.2100,508.3260) and
+  (512.0010,445.5020) .. (512.0010,368.0120) .. controls (511.9980,338.7190) and
+  (503.0410,311.4840) .. (487.6550,288.9690) -- cycle(276.7400,429.5960) ..
+  controls (202.0340,433.4870) and (167.0750,416.9590) .. (135.0500,386.9050) ..
+  controls (99.2850,353.3370) and (113.6520,315.0500) .. (142.7900,313.1040) ..
+  controls (171.9120,311.1590) and (189.3980,346.1160) .. (204.9410,355.8400) ..
+  controls (220.4650,365.5280) and (279.5340,387.6000) .. (310.7350,351.9320) ..
+  controls (344.7100,313.1040) and (288.1410,293.0120) .. (246.6760,286.9300) ..
+  controls (187.4730,278.1640) and (112.7260,246.1370) .. (118.5410,183.0230) ..
+  controls (124.3580,119.9490) and (172.1230,87.6090) .. (222.3910,83.0470) ..
+  controls (286.4680,77.2300) and (328.1820,92.7540) .. (361.1760,120.9070) ..
+  controls (399.3270,153.4360) and (378.6840,189.8010) .. (354.3770,192.7270) ..
+  controls (330.1660,195.6360) and (302.9730,139.2230) .. (249.5860,138.3750) ..
+  controls (194.5590,137.5110) and (157.3690,195.6360) .. (225.3000,212.1590) ..
+  controls (293.2660,228.6640) and (366.0500,235.4450) .. (392.2610,297.5760) ..
+  controls (418.4900,359.7130) and (351.5070,425.7010) .. (276.7400,429.5960) --
+  cycle;
+\protect\end{tikzpicture}}%
+  ~}
+
+
+%%%%%%%%%%%%
+
+% personal data
+\name{Alexis}{Zubiolo}
+%\address{I3S -- 2000, route des Lucioles, B\^at. Euclide B}{06903 Sophia Antipolis CEDEX France}{}
+\address{Ulitsa Sredna Gora, 97}{1303 Sofia}{Bulgaria}    
+\email{alexis.zubiolo@gmail.com}      
+\homepage{bit.ly/azubiolo}  
+\phone[mobile]{+359 876~999~180}  
+\extrainfo{\skypesocialsymbol~alexis.zubiolo\quad$\bullet$\quad Nationality: French}
+
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+%-----       resume       ---------------------------------------------------------
+\makecvtitle
+
+\section{Professional Experience}
+
+\subsection{Industry}
+
+\cventry{October 2016 -- present}{Data Science Team Lead}{\href{http://www.adcash.com/index.html}{Adcash}}{Sofia, Bulgaria}{}
+{
+Leading the Data Science team
+}
+\vspace*{-1em}
+\cventry{January -- September 2016}{Data Scientist}{}{}{}
+{
+Research and development in online advertising
+\begin{itemize}
+	\item Click and conversion prediction
+	\item Exploration-exploitation
+	\item Numerical optimization
+\end{itemize}
+}
+
+\subsection{Academic research}
+
+\cventry{March -- September 2012}{Research Internship}{\href{http://www.inria.fr/en/}{INRIA} -- \href{http://www.i3s.unice.fr/I3S/presentation.en.html}{I3S}}{Sophia Antipolis, France}{}{Classification of cells using multiclass Support Vector Machines and Kernel Methods}
+
+\cventry{January -- March 2012}{Engineering School Project}{\href{http://www.irit.fr/?lang=en}{IRIT} -- \href{http://www.enseeiht.fr/en/index.html}{ENSEEIHT}}{Toulouse, France}{}{Team leader of a research project in 3D Building reconstruction using Graph Cuts}
+
+\cventry{July -- September 2011}{Research Internship}{\href{http://www.irit.fr/?lang=en}{IRIT}}{Toulouse, France}{}{Automatic lip-reading project using Active Shape Models}
+
+\subsection{Teaching}
+
+\cventry{2016 -- present}{Lecturer}{\href{http://itstep.bg/en/}{STEP Computer Academy}}{Sofia, Bulgaria}{}
+{\begin{itemize}
+\item Introduction to Machine Learning (15 hours)
+\end{itemize}
+}
+
+\cventry{2014 -- 2015}{Teaching Assistant (66 hours)}{\href{http://unice.fr/}{University of Nice-Sophia Antipolis}}{Nice, France}{}
+{\begin{itemize}
+\item Introduction to Computer Science (18 hours)
+\item Web programming (48 hours)
+\end{itemize}
+}
+
+\cventry{2013 -- 2014}{Teaching Assistant (66 hours)}{\href{http://unice.fr/}{University of Nice-Sophia Antipolis}}{Nice, France}{}
+{\begin{itemize}
+\item Introduction to Computer Science (36 hours)
+\item Web Programming (12 hours)
+\item Object-Oriented Programming with Python (18 hours)
+\end{itemize}
+}
+
+%\newpage
+
+\cventry{2012 -- 2013}{Teaching Assistant (73 hours)}{\href{http://unice.fr/}{University of Nice-Sophia Antipolis} -- \href{http://www.polytechnice.fr/en/page1.html}{Polytech Nice-Sophia}}{Nice area, France}{}
+{\begin{itemize}
+\item Introduction to Computer Science (21 hours)
+\item Operating Systems (42 hours)
+\item Image Processing (10 hours)
+\end{itemize}
+}
+
+\section{Education}
+
+\cventry{2012 -- 2015}{Ph.D. in Machine Learning}{\href{http://unice.fr/}{University of Nice Sophia Antipolis} -- \href{http://www.inria.fr/en/centre/sophia}{INRIA} -- \href{http://www.i3s.unice.fr/I3S/presentation.en.html}{I3S Laboratory}}{Nice, France}{}
+{Automatic classification of biomedical data using Machine Learning}
+
+\cventry{2009 -- 2012}{M.Sc. and M.Eng. in Applied Mathematics and Computer Science}{\href{http://www.inp-toulouse.fr/en/index.html}{National Polytechnic Institute of Toulouse} -- \href{http://www.enseeiht.fr/en/index.html}{ENSEEIHT}}{Toulouse, France}{}{Specialization in applied mathematics and multimedia (image, video and signal processing)}  
+
+\subsection{Summer/Spring Schools}
+\cventry{July 2013}{ENS/INRIA Visual Recognition and Machine Learning Summer School}{\href{http://www.di.ens.fr/willow/events/cvml2013/}{\'Ecole Normale Sup\'erieure de Paris}}{Paris, France}{}
+{}
+
+\cventry{May 2013}{CNRS Spring School in Computer Vision}{\'Ecole de printemps \lq\lq Nouvelles tendances en vision par ordinateur\rq\rq}{Cabrerets, France}{}
+{}
+
+\section{Skills}
+\cvitem{Mathematics}{Machine Learning, Statistics, Optimization, Image and Video Processing, Computer Vision}
+\cvitem{Programming}{Python (sk-learn, NumPy), Scala (Spark, Breeze), Java, Matlab, SQL, \LaTeX}
+\cvitem{Operating Systems}{UNIX, Microsoft Windows}
+\cvitem{Multidisciplinary}{Extended experience interacting with people from a variety of fields (\textit{e.g.} Biologists, Medical Doctors, Sales and Marketing managers)}
+
+\section{Languages}
+\cvitemwithcomment{French}{Fluent}{Native speaker}
+\cvitemwithcomment{English}{Fluent}{}
+\cvitemwithcomment{Spanish}{Advanced}{}
+\cvitemwithcomment{Bulgarian}{Intermediate}{Currently living in Bulgaria and learning the language}
+\cvitemwithcomment{Russian}{Beginner}{Started learning the language in January 2014}
+
+\section{Publications}
+\subsection{Conferences}
+\begin{itemize}
+\item \textbf{Alexis Zubiolo}, Barbara André, \'Eric Debreuve and Grégoire Malandain:
+\textit{A Recursive Approach For Multiclass Support Vector Machine: Application to Automatic Classification of Endomicroscopic Videos}. 
+International Conference on Computer Vision Theory and Applications (VISAPP), Lisbon, Portugal, 2014
+\item \textbf{Alexis Zubiolo}, Kawssar Harb, Mich\`ele Studer, \'Eric Debreuve, Xavier Descombes
+\textit{Morphological Analysis and Feature Extraction of Neurons from Mouse Cortices Multiscale 3D Microscopic Images}.
+International Conference of the IEEE Engineering in Medicine and Biology Society (EMBC), Milano, Italy, 2015
+\item \textbf{Alexis Zubiolo}, Kawssar Harb, Mich\`ele Studer, \'Eric Debreuve, Xavier Descombes: \textit{Comment Retrouver une Constellation dans la Galaxie ?}
+Colloque GRETSI, Lyon, France, 2015
+\item \textbf{Alexis Zubiolo}, \'Eric Debreuve, Damien Ambrosetti, Philippe Pognonec, Xavier Descombes: \textit{Is the vascular network discriminant enough to classify renal cell carcinoma?}
+International Workshop on Content-Based Multimedia Indexing (CBMI), Bucharest, Romania, 2016
+
+\end{itemize}
+
+\subsection{Workshops}
+\begin{itemize}
+
+\item \textbf{Alexis Zubiolo}, Kawssar Harb, Nikita Lukianets, Franck Grammont, Michèle Studer, Éric Debreuve and Xavier Descombes: \textit{Towards Neuron Classification From 3D Confocal Microscopic Images}.
+SIGNALIFE Workshop on Cell Signaling, Nice, France, 2014
+
+\item Christian Alfano, Kawssar Harb, Elia Magrinelli, Nikita Lukianets, \textbf{Alexis Zubiolo}, Celine Nicolas, \'Eric Debreuve, Guillaume Sandoz, Xavier Descombes, Franck Grammont and Mich\`ele Studer: \textit{Concomitant expression of subcerebral- and callosal-specific genes defines a deep layer cell population in the postnatal mouse neocortex}.
+Society for Neuroscience, Washington DC., USA, 2014
+\end{itemize}
+
+\section{Miscellaneous}
+\cvitem{Sports}{Weightlifting, Gymnastics, Hiking and Rugby}
+\cvitem{Travels}{Europe and Latin America}
+\cvitem{Reading}{French, English and Spanish literature}
+\cvitem{Volunteering}{Member \textit{Sofia accueil}, an association in charge of helping French speaking people in Sofia. Organization of social events and trips.}
+
+
+\end{document}
